@@ -9,7 +9,7 @@ class CreateFuncionariosTable extends Migration
     public function up()
     {
         Schema::create('funcionarios', function (Blueprint $table) {
-            $table->id('idfuncionarios');
+            $table->id();
             $table->string('nome', 45);
             $table->string('localizacao', 45);
             $table->string('telefone', 45);

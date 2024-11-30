@@ -15,7 +15,7 @@ class CreateCategoriasTable extends Migration
         });
 
         Schema::create('produtos', function (Blueprint $table) {
-            $table->id('idprodutos');
+            $table->id();
             $table->string('nome', 45);
             $table->string('preco', 45);
             $table->string('quantidade', 45);
