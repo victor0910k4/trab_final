@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ControllerCategorias;
 use App\Http\Controllers\ControllerFuncionarios;
+use App\Http\Controllers\ControllerProdutos;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 

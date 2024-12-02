@@ -4,20 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use App\Models\Produtos;
+use App\Models\Produto;
 
 class ControllerProdutos extends Controller
 {
     public readonly Produto $produto;
+
     public function __construct()
     {
         $this->produto = new Produto();
     }
+
     public function index()
     {
         $produtos = $this->produto->all();
-        return view('produto', compact('produtos'));
+        return view('produtos', compact('produtos'));
     }
+
+
     public function create()
     {
     return view('produtos.criar');
